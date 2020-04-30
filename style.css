@@ -1,10 +1,67 @@
-.flex {
-    background-color: #00c7ce;
-    height: 50vh;
-    padding: 10px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.flex > div {
-    background-color: #fff;
-    margin: 5px;
-    font-size: 30px;
+
+.header {
+    background-color: red;
+    padding: 30px 20px;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.header > div{
+	background-color: pink;
+	height: 70px;
+	width: 140px;
+	margin:0 10px;
+}
+
+.header > :first-child{
+	margin-right: auto;
+}
+
+.main {
+    display:flex;
+    justify-content:center;
+}
+
+.sidebar{
+	background-color: lightgreen;
+	width:300px;
+}
+
+.contents{
+    background-color: green;
+    max-width: 700px;
+    flex-grow: 1;
+    display:flex;
+    padding:20px;
+    flex-wrap: wrap;
+    align-content:stretch;
+    justify-content: center;
+}
+
+.contents > div{
+    flex-basis:200px;
+    height:130px;
+    margin:10px;
+    background-color: yellow;
+}
+
+.footer{
+    background-color:blue;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding:20px;
+}
+
+.footer > div{
+    background-color:lightblue;
+    flex-basis: 45%;
+    max-width:600px;
+    height:40px;
+    margin:10px;
 }
